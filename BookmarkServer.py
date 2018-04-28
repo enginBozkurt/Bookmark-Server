@@ -48,6 +48,7 @@ def CheckURI(uri, timeout=5):
         return False
 
 class ThreadHTTPServer(ThreadingMixIn, http.server.HTTPServer):
+    "This is an HTTPServer that supports thread-based concurrency."
 
 
 class Shortener(http.server.BaseHTTPRequestHandler):
